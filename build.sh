@@ -1,0 +1,1 @@
+docker build -t fishkj/fastdfs:5.11 -f ./Dockerfile ./
