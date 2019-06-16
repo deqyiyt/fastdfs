@@ -1,5 +1,5 @@
 ### 执行启动单机版fastdfs
-```
+```shell
 docker run \
 -d \
 # 宿主机IP地址，可以是内网或者外网，只要能访问到
@@ -14,7 +14,7 @@ fishkj/fastdfs:5.11
 ```
 
 ### 执行启动storage
-```
+```shell
 docker run \
 -d \
 # 宿主机IP地址，可以是内网或者外网，只要能访问到
@@ -32,7 +32,7 @@ fishkj/fastdfs:5.11
 
 
 ### 执行启动tracker
-```
+```shell
 docker run \
 -d \
 -e SERVER=TRACKER \
@@ -43,4 +43,9 @@ docker run \
 fishkj/fastdfs:5.11
 ```
 
-** 环境变量SERVER的值为ALL，STORAGE，TRACKER **
+### 环境变量
+* FASTDFS_IPADDR：追踪器的IP地址，只要容器内能访问到即可  
+* SERVER  
+> ALL：单节点  
+> STORAGE：存储仓库  
+> TRACKER：跟踪器  
