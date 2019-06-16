@@ -49,3 +49,11 @@ fishkj/fastdfs:5.11
 	ALL：单节点  
 	STORAGE：存储仓库  
 	TRACKER：跟踪器  
+	
+### PS
+* 发现fastdfs只能在内网使用，docker必须要用host网络或者指定IP的形式  
+* 如：  
+* --network host  
+* 或者  
+* --ip 172.20.0.10  变量FASTDFS_IPADDR需要与指定IP匹配  
+* nginx代理IP暴露公网没有问题

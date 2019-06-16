@@ -9,7 +9,6 @@ ADD fastdfs.sh /home
 # add source code
 ADD source/* /usr/local/src/
 
-# 下载依赖及安装应用程序
 RUN yum install -y gcc gcc-c ++ make automake autoconf libtool pcre pcre-devel zlib zlib-devel openssl-devel \
 	&& cd /usr/local/src/libfastcommon-1.0.39 \
 		&& ./make.sh && ./make.sh install \
