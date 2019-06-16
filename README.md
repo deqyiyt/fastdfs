@@ -46,6 +46,6 @@ fishkj/fastdfs:5.11
 ### 环境变量
 * FASTDFS_IPADDR：追踪器的IP地址，只要容器内能访问到即可  
 * SERVER  
-> ALL：单节点  
-> STORAGE：存储仓库  
-> TRACKER：跟踪器  
+	ALL：单节点  
+	STORAGE：存储仓库  
+	TRACKER：跟踪器  
